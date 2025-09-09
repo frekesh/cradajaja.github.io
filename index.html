@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dajaj Tria - Poulet Frais de Ferme | دجاج طري</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Poppins (Latin) & Cairo (Arabic) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Apply custom fonts */
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .font-cairo {
+            font-family: 'Cairo', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <!-- Header & Navigation -->
+    <header class="absolute top-0 left-0 w-full z-10 py-4">
+        <nav class="container mx-auto px-6 flex justify-between items-center">
+            <!-- Logo -->
+            <a href="#" class="text-white text-2xl font-bold flex items-center">
+                 <svg class="w-10 h-10 mr-2 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.196-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.783-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path></svg>
+                <span class="text-white">Dajaj Tria</span>
+            </a>
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex space-x-8 text-white">
+                <a href="#produits" class="hover:text-amber-300 transition duration-300">Nos Produits</a>
+                <a href="#engagements" class="hover:text-amber-300 transition duration-300">Notre Ferme</a>
+                <a href="#processus" class="hover:text-amber-300 transition duration-300">Comment Ça Marche?</a>
+                <a href="#contact" class="hover:text-amber-300 transition duration-300">Contact</a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden text-white">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen bg-cover bg-center flex items-center justify-center text-center" style="background-image: url('https://images.unsplash.com/photo-1598514983318-2f64f1636733?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80');">
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div class="relative z-1 container mx-auto px-6 text-white">
+            <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-4">
+                Le Goût de la Qualité. La Fraîcheur de la Ferme.
+            </h1>
+            <p class="font-cairo text-xl md:text-2xl mb-8 text-amber-200">
+                المذاق ديال الجودة. الطراوة ديال المزرعة
+            </p>
+            <p class="max-w-2xl mx-auto text-lg md:text-xl mb-10">
+                Poulet frais de ferme, 100% naturel, livré chez vous à Casablanca et environs en moins de 24h.
+            </p>
+            <a href="#produits" class="bg-amber-500 hover:bg-amber-600 text-white font-bold py-3 px-8 rounded-full text-lg transition-transform duration-300 hover:scale-105 inline-block">
+                COMMANDER MAINTENANT
+            </a>
+        </div>
+    </section>
+
+    <!-- Why Choose Us? (Nos Engagements) Section -->
+    <section id="engagements" class="py-16 md:py-24 bg-gray-50">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Pourquoi <span class="text-amber-600">Dajaj Tria</span> est le Meilleur Choix?</h2>
+            <p class="font-cairo text-lg text-gray-600 mb-12">علاش دجاج طري هو أحسن اختيار؟</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Feature Card 1 -->
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <div class="bg-amber-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0012 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Directement de la Ferme</h3>
+                    <p class="text-gray-600">Poulet élevé en plein air, sans antibiotiques. Directement de notre ferme à votre table.</p>
+                </div>
+                <!-- Feature Card 2 -->
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <div class="bg-amber-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <img src="https://placehold.co/40x40/333333/FFFFFF?text=H" alt="Halal Icon" class="rounded-full">
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">100% Halal Garanti</h3>
+                    <p class="text-gray-600">Abattage certifié, respectant les rites et les plus hauts standards d'hygiène.</p>
+                </div>
+                <!-- Feature Card 3 -->
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <div class="bg-amber-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h1.125c.621 0 1.125-.504 1.125-1.125V14.25m-17.25 4.5v-1.875a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 012.25 9.75v-1.5a3.375 3.375 0 003.375-3.375H15M12 14.25h.008v.008H12v-.008z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Livraison Express</h3>
+                    <p class="text-gray-600">Recevez votre commande ultra-fraîche demain, dans un emballage réfrigéré.</p>
+                </div>
+                <!-- Feature Card 4 -->
+                <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <div class="bg-amber-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Qualité Supérieure</h3>
+                    <p class="text-gray-600">Une chair tendre et savoureuse, un goût authentique dès la première bouchée.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="produits" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 text-center mb-4">Choisissez Votre Coupe Préférée</h2>
+            <p class="font-cairo text-lg text-gray-600 text-center mb-12">ختار التقطيعة لي بغيتي</p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Product Card 1 -->
+                <div class="rounded-lg shadow-lg overflow-hidden group">
+                    <img src="https://images.unsplash.com/photo-1628139395914-5d9c1598585e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" alt="Poulet Entier Frais" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Poulet Entier Frais (~1.3 kg)</h3>
+                        <p class="text-2xl font-bold text-amber-600 mb-4">85 MAD</p>
+                        <button class="w-full bg-gray-800 text-white py-2 rounded-lg hover:bg-amber-600 transition-colors duration-300">Ajouter au Panier +</button>
+                    </div>
+                </div>
+                <!-- Product Card 2 -->
+                <div class="rounded-lg shadow-lg overflow-hidden group">
+                    <img src="https://images.unsplash.com/photo-1604503468735-4a5e0b0e5e6b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" alt="Escalopes de Poulet" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Escalopes de Poulet (500g)</h3>
+                        <p class="text-2xl font-bold text-amber-600 mb-4">55 MAD</p>
+                        <button class="w-full bg-gray-800 text-white py-2 rounded-lg hover:bg-amber-600 transition-colors duration-300">Ajouter au Panier +</button>
+                    </div>
+                </div>
+                <!-- Product Card 3 -->
+                <div class="rounded-lg shadow-lg overflow-hidden group">
+                    <img src="https://images.unsplash.com/photo-1627907222584-7a4a86f54409?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" alt="Cuisses de Poulet" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Cuisses de Poulet (500g)</h3>
+                        <p class="text-2xl font-bold text-amber-600 mb-4">45 MAD</p>
+                        <button class="w-full bg-gray-800 text-white py-2 rounded-lg hover:bg-amber-600 transition-colors duration-300">Ajouter au Panier +</button>
+                    </div>
+                </div>
+                <!-- Product Card 4 -->
+                <div class="rounded-lg shadow-lg overflow-hidden group">
+                    <img src="https://images.unsplash.com/photo-1594041695-1a860086a48a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" alt="Ailes de Poulet Marinées" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Ailes Marinées BBQ (500g)</h3>
+                        <p class="text-2xl font-bold text-amber-600 mb-4">50 MAD</p>
+                        <button class="w-full bg-gray-800 text-white py-2 rounded-lg hover:bg-amber-600 transition-colors duration-300">Ajouter au Panier +</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- How It Works Section -->
+    <section id="processus" class="py-16 md:py-24 bg-gray-50">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-12">Votre Poulet Frais en 3 Étapes Simples</h2>
+            <div class="flex flex-col md:flex-row justify-around items-center space-y-12 md:space-y-0">
+                <!-- Step 1 -->
+                <div class="flex flex-col items-center max-w-xs">
+                    <div class="bg-amber-500 text-white rounded-full w-16 h-16 flex items-center justify-center text-2xl font-bold mb-4">1</div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Choisissez</h3>
+                    <p class="text-gray-600">Sélectionnez vos produits et ajoutez-les à votre panier.</p>
+                </div>
+                <div class="hidden md:block text-gray-300 text-4xl">→</div>
+                <!-- Step 2 -->
+                <div class="flex flex-col items-center max-w-xs">
+                    <div class="bg-amber-500 text-white rounded-full w-16 h-16 flex items-center justify-center text-2xl font-bold mb-4">2</div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Validez</h3>
+                    <p class="text-gray-600">Entrez votre adresse et payez en ligne ou à la livraison.</p>
+                </div>
+                <div class="hidden md:block text-gray-300 text-4xl">→</div>
+                <!-- Step 3 -->
+                <div class="flex flex-col items-center max-w-xs">
+                    <div class="bg-amber-500 text-white rounded-full w-16 h-16 flex items-center justify-center text-2xl font-bold mb-4">3</div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Dégustez</h3>
+                    <p class="text-gray-600">Recevez votre commande à votre porte et profitez du bon goût !</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="bg-amber-500 text-white py-16 text-center">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Prêt à Goûter la Différence?</h2>
+            <p class="max-w-xl mx-auto mb-8">Offrez à votre famille le meilleur. La qualité n'a jamais été aussi simple à commander.</p>
+            <a href="#produits" class="bg-white text-amber-600 font-bold py-3 px-8 rounded-full text-lg hover:bg-gray-100 transition-colors duration-300 inline-block">
+                VOIR TOUS NOS PRODUITS
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-gray-800 text-gray-300 py-12">
+        <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
+            <!-- Column 1: About -->
+            <div>
+                <h3 class="text-lg font-semibold text-white mb-4">Dajaj Tria</h3>
+                <p class="text-sm">Notre mission est de vous livrer le poulet le plus frais et le plus savoureux, directement de la ferme à votre cuisine, avec un service irréprochable.</p>
+            </div>
+            <!-- Column 2: Quick Links -->
+            <div>
+                <h3 class="text-lg font-semibold text-white mb-4">Liens Rapides</h3>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#" class="hover:text-amber-300">Accueil</a></li>
+                    <li><a href="#produits" class="hover:text-amber-300">Produits</a></li>
+                    <li><a href="#" class="hover:text-amber-300">FAQ</a></li>
+                    <li><a href="#" class="hover:text-amber-300">Contact</a></li>
+                </ul>
+            </div>
+            <!-- Column 3: Contact Info -->
+            <div>
+                <h3 class="text-lg font-semibold text-white mb-4">Contactez-nous</h3>
+                <ul class="space-y-2 text-sm">
+                    <li>WhatsApp: 06 12 34 56 78</li>
+                    <li>Email: contact@dajajtria.ma</li>
+                    <li>Casablanca, Maroc</li>
+                </ul>
+            </div>
+            <!-- Column 4: Social -->
+            <div>
+                <h3 class="text-lg font-semibold text-white mb-4">Suivez-nous</h3>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-300 hover:text-amber-300">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.689-.073-4.948-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.162 6.162 6.162 6.162-2.759 6.162-6.162-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4s1.791-4 4-4 4 1.79 4 4-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44 1.441-.645 1.441-1.44-.645-1.44-1.441-1.44z"></path></svg>
+                    </a>
+                    <a href="#" class="text-gray-300 hover:text-amber-300">
+                         <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"></path></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="border-t border-gray-700 mt-8 pt-6 text-center text-sm">
+            <p>&copy; 2025 Dajaj Tria. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
